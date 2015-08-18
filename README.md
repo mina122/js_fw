@@ -11,7 +11,7 @@ feature:
 3. Oauth Socmed(FB,Twitter,G+)
 4. Upload File
 5. JWT(Json Web Token)
-6. Mail Services
+6. Mail Services Using Mandrill
 7. Chat Real Time Using Socket.IO
 
 
