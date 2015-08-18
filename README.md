@@ -13,3 +13,13 @@ feature:
 5. JWT(Json Web Token)
 6. Mail Services
 7. Chat Real Time Using Socket.IO
+
+
+To running using
+
+debug => nodemon app.js
+production => forever app.js
+
+for Best Performance Use Varnish
+http port 3030 => you can changed it
+https port 4300 => you can changed it
