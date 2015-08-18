@@ -1,4 +1,7 @@
-/* Modular Used */
+/* 
+Modular Used 
+Install Using NPM(Node Package Manager)
+*/
 
 body-parser
 bytes
