@@ -81,10 +81,8 @@ var compression = require('compression');
 // var server = http.createServer(app);
 // HTTPS //
 var options = {
-    key: fs.readFileSync('/etc/nginx/ssl/server.key'),
-    cert: fs.readFileSync('/etc/nginx/ssl/server.crt'),
-    // key: fs.readFileSync('C:/cygwin64/home/jannes/node/apps/master/server.key'),
-    // cert: fs.readFileSync('C:/cygwin64/home/jannes/node/apps/master/server.crt'),
+    key: fs.readFileSync('/etc/nginx/ssl/server.key'), // path to ssl
+    cert: fs.readFileSync('/etc/nginx/ssl/server.crt'), // path to ssl
     requestCert: false,
     rejectUnauthorized: false
 };
