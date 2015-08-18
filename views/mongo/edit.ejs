@@ -1,0 +1,12 @@
+<title><%=(title)?title:""%></title>
+
+<h1><%=(title)?title:""%></h1>
+<form method="post" action="/mongo/edit">
+	<input type="hidden" name="_id" value="<%=_id%>">
+	<input type="hidden" name="id" value="<%=id%>">
+	Name : <input type="text" value="<%=name%>" name="name" placeholder='name'><br>
+	Email : <input type="text" value="<%=email%>" name="email" placeholder='email'><br>
+	Phone : <input type="text" value="<%=phone%>" name="phone" placeholder='phone'><br>
+	<br>
+	<input type="submit">
+</form>

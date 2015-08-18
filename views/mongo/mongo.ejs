@@ -1,0 +1,37 @@
+<html>
+    <head>
+        
+        <title><%=(title) ? title :''%></title>
+    
+    </head>
+    <body>
+		<a href="./mongo/add">Add New</a>
+        <table border="1">
+		<tr>
+			<% for(var i=0;i<grid.length;i++){ %>
+				<th><%=grid[i].menu%></th>
+			<% } %>
+			<th>Action</th>
+		</tr>
+		<% if(data.length){%>
+			<% for(var i=0;i<data.length;i++){ %>
+				<tr>
+					<td><%=data[i].id%></td>
+					<td><%=data[i].name%></td>
+					<td><%=data[i].email%></td>
+					<td>
+					<a href="/mongo/edit/<%=data[i]._id%>">Edit</a> | 
+					<a href="/mongo/delete/<%=data[i]._id%>">Del</a>
+					</td>
+				</tr>
+			<% }%>
+		<% }%>
+		</table>
+    </body>
+
+</html>
+
+<!--Gunakan fungsi print_r (dari module phplike) untuk parsing mongodb-->	
+<script>
+console.log('<%=print_r(data)%>');
+</script>
